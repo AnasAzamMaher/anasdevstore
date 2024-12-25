@@ -1,0 +1,53 @@
+@import '../../../css-config/mixins.scss';
+
+.related-products {
+    margin-top: 40px;
+    text-align: center;
+  
+    h2 {
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      color: #333;
+    }
+  
+    .related-products-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+  
+      .related-product-card {
+        background-color: #f8f8f8;
+        border-radius: 10px;
+        padding: 15px;
+        width: 200px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+  
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+          margin-bottom: 10px;
+        }
+  
+        h3 {
+          font-size: 1rem;
+          margin-bottom: 5px;
+          color: #555;
+          line-height: 10px;
+        }
+  
+        p {
+          font-size: 0.9rem;
+          color: #777;
+        }
+      }
+    }
+  }
+  
